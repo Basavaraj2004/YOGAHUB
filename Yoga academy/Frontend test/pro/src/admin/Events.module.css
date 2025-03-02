@@ -1,0 +1,211 @@
+/* Overall container styling */
+.eventsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #ffffff;
+  padding: 40px;
+  color: #413535;
+}
+
+
+/* Header styling */
+.eventsHeader {
+  font-size: 50px;
+  color: #0f0f0f;
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background: linear-gradient(45deg, #ff6f61, #dce35b); /* Gradient background */
+  -webkit-background-clip: text; /* Vendor prefix */
+  background-clip: text; /* Standard property for better compatibility */
+  -webkit-text-fill-color: transparent; /* Gradient effect on text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow */
+  animation: animateHeader 2s infinite; /* Animation effect */
+}
+
+/* Animation keyframes */
+@keyframes animateHeader {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+
+/* List container styling */
+.eventsList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1300px;
+  gap: 30px; /* Space between event cards */
+}
+
+/* Individual event card styling */
+.eventCard {
+  display: flex;
+  flex-direction: column;
+  background: #fffefe;
+  border-radius: 20px;
+  padding: 30px; /* Increased padding */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 390px; /* Increased max-width */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 10px;
+}
+
+/* Hover effect for event card */
+.eventCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Image container styling */
+.eventImageWrapper { 
+  width: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+/* Image styling */
+.eventImage {
+  width: 100%;
+  height: auto; /* Ensure image is not distorted */
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect for image */
+.eventImageWrapper:hover .eventImage {
+  transform: scale(1.05);
+}
+
+/* Event details container styling */
+.eventDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Event title styling */
+.eventTitle {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+}
+
+/* Event date and time styling */
+.eventDateTime {
+  font-size: 16px;
+  color: #888;
+  margin-bottom: 15px;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* Event description styling */
+.eventDescription {
+  font-size: 14px;
+  color: #555;
+  font-family: 'Helvetica Neue', sans-serif;
+  line-height: 1.5;
+}
+
+/* Add New Program button styling */
+.addButtonWrapper {
+  margin-top: 40px;
+}
+
+.addButton {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.addButton:hover {
+  background-color: #0056b3;
+}
+
+/* Add Event Form styling */
+.addEventForm {
+  margin-top: 30px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.addEventForm h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.addEventForm input,
+.addEventForm textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.addEventForm textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.submitButton {
+  background-color: #28a745;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #218838;
+}
+
+/* Delete button styling */
+.deleteButton {
+  background-color: #dc3545;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.deleteButton:hover {
+  background-color: #c82333;
+}

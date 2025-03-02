@@ -1,0 +1,240 @@
+/* VoiceBot.css */
+
+.voicebot-wrapper {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .voicebot {
+    position: relative;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .voicebot.open {
+    transform: translateY(-10px);
+  }
+  
+  .voicebot-toggle {
+    background-color: #2a2a2a;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .voicebot-toggle:hover {
+    background-color: #333;
+    transform: scale(1.1);
+  }
+  
+  .voicebot-toggle img {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .voicebot-content {
+    width: 320px;
+    background: linear-gradient(135deg, #052f67b7, #0f539c);
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .voicebot.open .voicebot-content {
+    opacity: 1;
+  }
+  
+  .voicebot-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .voicebot-header h2 {
+    font-size: 1.4em;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    margin: 0;
+  }
+  
+  .voicebot-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .info-btn,
+  .close-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  
+  .info-btn img,
+  .close-btn img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .info-btn:hover {
+    color: #ff9a9e;
+  }
+  
+  .close-btn:hover {
+    color: #ff9a9e;
+  }
+  
+  .voicebot-body {
+    color: #ddd;
+    width: 100%;
+  }
+  
+  .voicebot-body p {
+    color: #ddd;
+    padding: 13px;
+  }
+  
+  .voicebot-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .voicebot-controls button {
+    background-color: #9b4043;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+  }
+  
+  .voicebot-controls button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+  }
+  
+  .voicebot-controls button:hover:not(:disabled) {
+    background-color: #e06d6d;
+  }
+  
+  .voicebot-transcript,
+  .voicebot-response {
+    margin: 10px 0;
+    font-size: 1em;
+    color: #333;
+  }
+  
+  .voicebot-transcript strong,
+  .voicebot-response strong {
+    color: #ff9a9e;
+  }
+  
+  
+/* VoiceBot.css */
+
+/* VoiceBot.css */
+
+/* Existing styles... */
+
+.help-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Slightly less opaque for better visibility of the background image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1100;
+    backdrop-filter: blur(5px); /* Adds a blur effect to the background */
+  }
+  
+  .help-content {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-radius: 15px;
+    padding: 30px; /* Increased padding for better spacing */
+    max-width: 500px; /* Increased max-width for better readability */
+    width: 90%; /* Responsive width */
+    text-align: left; /* Left-aligned text for better readability */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    background-image: url('https://imageio.forbes.com/specials-images/imageserve/661e54d7b6df57ff306d0b4c/Small-robot-assistant-work-with-graphic-display/960x0.jpg?format=jpg&width=1440'); /* Transparent background image */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .help-content h3 {
+    font-size: 1.6em; /* Larger font size for the heading */
+    color: #052f67;
+    margin-bottom: 20px; /* Increased margin for spacing */
+    font-family: 'Arial', sans-serif; /* Changed font for a cleaner look */
+  }
+  
+  .help-content p {
+    font-size: 1em; /* Standard font size for paragraphs */
+    color: #333;
+    margin-bottom: 15px; /* Spacing between paragraphs */
+    line-height: 1.6; /* Increased line height for readability */
+  }
+  
+  .help-content ul {
+    list-style-type: disc; /* Use disc bullets for list items */
+    padding-left: 20px; /* Padding for list items */
+    margin-bottom: 20px; /* Spacing below the list */
+  }
+  
+  .help-content li {
+    font-size: 1em; /* Standard font size for list items */
+    margin-bottom: 10px; /* Spacing between list items */
+  }
+  
+  .close-help-btn {
+    background-color: #e06d6d;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px; /* Increased padding for better button size */
+    cursor: pointer;
+    font-family: 'Arial', sans-serif; /* Changed font for a cleaner look */
+    font-size: 1em; /* Standard font size for button */
+    margin-top: 20px; /* Spacing above the button */
+    transition: background-color 0.3s ease;
+  }
+  
+  .close-help-btn:hover {
+    background-color: #9b4043;
+  }
+  
+  .voicebot-icons img {
+    width: 20px; /* Adjusted icon size */
+    height: 20px;
+  }
+  

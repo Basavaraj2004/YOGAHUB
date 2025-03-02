@@ -1,0 +1,205 @@
+/* Overall styling for the review page */
+.review-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e2e2e2, #ffffff);
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    overflow: hidden;
+}
+
+/* Admin info section styling */
+.admin-info {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.admin-info h1 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.admin-info p {
+    font-size: 18px;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Styling for the "See Reviews" and "Marked Reviews" buttons */
+.see-reviews-btn {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.see-reviews-btn:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.3s ease;
+    z-index: -1;
+}
+
+.see-reviews-btn:hover:before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.see-reviews-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* Styling for the reviews popup */
+.reviews-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 800px;
+    max-height: 80vh;
+    overflow-y: auto;
+    animation: popupAnimation 0.5s ease-out;
+}
+
+/* Header styling for the reviews popup */
+.reviews-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.reviews-header h2 {
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+/* Close button styling */
+.close-btn {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.close-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Container for the reviews */
+.reviews-container {
+    padding-top: 20px;
+}
+
+/* Styling for individual review cards */
+.review-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for review card titles */
+.review-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Styling for review card paragraphs */
+.review-card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Styling for icon buttons */
+.icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 0 5px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icon-btn:hover {
+    transform: scale(1.2);
+}
+
+.delete-btn {
+    color: #e74c3c;
+}
+
+.delete-btn:hover {
+    color: #c0392b;
+}
+
+.mark-btn {
+    color: #f1c40f;
+}
+
+.mark-btn:hover {
+    color: #f39c12;
+}
+
+/* Styling for marked reviews */
+.marked {
+    color: #f39c12;
+}
+
+/* Styling for buttons container */
+.buttons-container.hidden {
+    display: none;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+@keyframes popupAnimation {
+    from {
+        transform: translate(-50%, -45%);
+        opacity: 0;
+    }
+    to {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}

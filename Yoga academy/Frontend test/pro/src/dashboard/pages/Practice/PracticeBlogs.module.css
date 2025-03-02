@@ -1,0 +1,69 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 417px; /* Adjusted to make the cards wider */
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 1rem;
+    border: 1px solid #ddd; /* Border around each card */
+    border-radius: 8px; /* Rounded corners for the card */
+    background-color: #fff; /* White background for better contrast */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+
+.blogImage {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Fit image to container */
+    border-bottom: 1px solid #ddd; /* Border below the image */
+    border-radius: 4px; /* Rounded corners for the image */
+}
+
+.title {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.date {
+    color: grey;
+    font-size: 0.9rem;
+}
+
+.description {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.readMoreButton {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #5460D4;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 4px; /* Rounded corners for the button */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.readMoreButton:hover {
+    background-color: #4352a5; /* Darker shade on hover */
+}
+
+.header {
+    margin: 1rem auto 4rem;
+    text-align: center;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    padding: 0 1rem;
+}

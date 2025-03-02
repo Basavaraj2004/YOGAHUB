@@ -1,0 +1,66 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 120px;
+    color: white;
+}
+
+.navLogo {
+    font-family: Outfit;
+    font-size: 42px;
+    font-weight: 500;
+}
+
+.navMenu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 18px;
+    gap: 85px;
+    padding: 0;
+    margin: 0;
+}
+
+.navMenu li {
+    position: relative; /* Ensure that pseudo-elements are positioned correctly */
+}
+
+.navMenu a {
+    text-decoration: none;
+    color: white;
+    position: relative; /* Ensure the pseudo-element is positioned correctly */
+}
+
+.navMenu a::after {
+    content: '';
+    display: block;
+    height: 2px; /* Thickness of the underline */
+    background-color: white; /* Color of the underline */
+    position: absolute;
+    bottom: -5px; /* Position it slightly below the text */
+    left: 0;
+    right: 100%;
+    transition: right 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+.navMenu a:hover::after {
+    right: 0;
+}
+
+.navLogin {
+    border-radius: 50px;
+    padding: 10px 38px;
+    background-color: white;
+    color: black;
+}
+
+/* Adding this to target the Link inside navLogin */
+.navMenu .navLogin a {
+    text-decoration: none;
+    color: black; /* Ensure the color remains black */
+}
+
+.navMenu .navLogin a::after {
+    background-color: black; /* Ensure the underline color matches the text color */
+}

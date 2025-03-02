@@ -1,0 +1,49 @@
+.footer {
+    background-color: #5460D4;
+    /* background-color: #cfd7fa; */
+    padding: 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .socialMedia a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5em;
+    transition: color 0.3s;
+  }
+  
+  .socialMedia a:hover {
+    color: #ffcc00;
+  }
+  
+  .info p {
+    margin: 5px 0;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .socialMedia {
+      margin-bottom: 20px;
+    }
+  }
+  

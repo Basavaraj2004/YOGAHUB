@@ -1,0 +1,117 @@
+.paymentPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('./images/payment3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 5px;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.formContainer {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 3rem;
+  border-radius: 15px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+  width: 450px;
+  backdrop-filter: blur(10px);
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.MuiFormControl-root {
+  margin-top: 20px;
+}
+
+.MuiInputLabel-root {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.MuiInputBase-root {
+  font-size: 1.1rem;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.MuiInputBase-input::placeholder {
+  font-size: 1rem;
+  color: #aaa;
+}
+
+.payButton {
+  margin-top: 30px;
+  font-size: 1.2rem;
+  padding: 12px;
+  border-radius: 10px;
+  background-color: #4a90e2;
+  color: #fff;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.payButton:hover {
+  background-color: #3b4ac0;
+  transform: scale(1.05);
+}
+
+.modalContent {
+  background: white;
+  color: black;
+  border-radius: 15px;
+  padding: 2.5rem;
+  text-align: center;
+  position: 'absolute';
+  top: '50%';
+  left: '50%';
+  transform: 'translate(-50%, -50%)';
+}
+
+.modalTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.modalBody {
+  font-size: 1.5rem;
+}
+
+.modalFooterBtn {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #4a90e2;
+  color: #fff;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.modalFooterBtn:hover {
+  background-color: #3b4ac0;
+  transform: scale(1.05);
+}

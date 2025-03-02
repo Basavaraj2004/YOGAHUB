@@ -1,0 +1,123 @@
+#LoginBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+#LoginTitle {
+    font-family: 'Poppins', sans-serif;
+}
+
+.LoginContainer hr {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.LoginContainer {
+    background-color: rgba(0, 0, 0, 0.7);
+     padding: 30px;
+    border-radius: 30px;
+    width: 50px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.7);
+    width: 400px;
+    z-index: 1;
+}
+
+.LoginContainer h1 {
+    text-align: center;
+    color: #ffffff;
+}
+
+.LoginContainer form {
+    display: flex;
+    flex-direction: column;
+}
+
+.LoginContainer form div {
+    margin-bottom: 15px;
+}
+
+.LoginContainer input {
+    width: 100%;
+    background-color: rgba(69, 77, 144, 0.3);
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+    color: #ffffff;
+    height: 50px;
+}
+
+.LoginContainer input:hover {
+    transition: all 0.3s ease;
+}
+
+.LoginContainer input::placeholder {
+    color: #ffffff;
+    font-family: sans-serif;
+}
+
+.LoginContainer button {
+    background-color: #4b2d06;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.LoginContainer button:hover {
+    background-color: #a26412;
+    border-radius: 20px;
+}
+
+.Sign-up {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.Sign-up a {
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.Sign-up a:hover {
+    color: rgb(196, 116, 65);
+    font-size: 20px;
+}
+
+.Forgot-password {
+    color: #ffffff;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.Forgot-password a {
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.Forgot-password a:hover {
+    color: rgb(196, 116, 65);
+    font-size: 20px;
+}

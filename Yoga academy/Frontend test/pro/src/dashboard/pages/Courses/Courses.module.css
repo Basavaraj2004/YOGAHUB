@@ -1,0 +1,306 @@
+/* Existing styles */
+.coursesPage {
+  font-family: 'Arial, sans-serif';
+  color: #333;
+}
+
+.header {
+  /* background-image: linear-gradient(rgba(5, 10, 35, 0.7), rgba(5, 10, 35, 0.7)), url('./images/header.jpg'); */
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.headerContent {
+  margin-top: 3%;
+  max-width: 70%;
+}
+
+.header h1 {
+  font-size: 9rem;
+  font-weight: 900;
+}
+
+.header p {
+  margin-top: 3%;
+  font-size: 2rem;
+}
+
+.courses {
+  padding: 2rem;
+}
+
+.courseHeading {
+
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 7rem;
+}
+
+.gridContainer {
+  margin: 5%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns per row */
+  gap: 8rem; /* Increased gap between items */
+}
+
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  padding-top: 100%; /* Create square aspect ratio */
+  position: relative;
+  margin: 0 auto; /* Center cards and add margin around */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.cardImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardContent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 22px;
+  width: 100%;
+  padding: 2.5rem; /* Increased padding for larger content area */
+  background: rgba(255, 255, 255, 0.9); /* Slightly opaque background for readability */
+  box-sizing: border-box;
+}
+
+.amount {
+  font-size: 2.5rem; /* Slightly larger font size */
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.enrollButton {
+  font-family: sans-serif;
+  margin: 17px;
+  background-color: #007BFF; /* Vivid blue color */
+  border: none;
+  color: white;
+  padding: 1rem 2rem; /* Larger padding for a bigger button */
+  border-radius: 12px; /* Slightly larger border radius */
+  font-size: 16px; /* Larger font size */
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.enrollButton:hover {
+  background-color: #0056b3; /* Darker shade of blue on hover */
+  transform: scale(1.05); /* Slightly larger on hover */
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.updates {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+.updates h4 {
+  margin-bottom: 0.5rem;
+}
+
+.updates ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.updates li {
+  margin-bottom: 0.5rem;
+}
+
+.updateButton {
+  font-family: sans-serif;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.updateButton:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+/* Overlay for blur effect */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+  backdrop-filter: blur(5px); /* Blur effect for the background */
+  z-index: 999; /* Just below the modal */
+}
+
+/* Existing styles for the modal */
+.updateModal {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  width: 80%;
+  height: 400px;
+  max-width: 700px;
+  gap: 35px;
+  z-index: 1000; /* Ensure it's above the overlay */
+  text-align: center;
+}
+
+.updateModal h2 {
+  font-size: 32px;
+  margin-bottom: 1rem;
+}
+
+.updateModal p {
+  font-size: 22px;
+  margin-bottom: 1.5rem;
+}
+
+.updateModal button {
+  background-color: #007BFF;
+  border: none;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.updateModal button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-top: 40px;
+  margin-left: 80px;
+}
+
+.searchInput, .priceFilter {
+  margin: 30px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #007bff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.searchInput:focus, .priceFilter:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.priceFilter {
+  flex: 1;
+  max-width: 200px;
+}
+.searchContainer {
+  position: relative;
+  width: 50%;
+}
+
+.suggestionsList {
+  position: absolute;
+  top: 68%;
+  left: 31px;
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  z-index: 10;
+  max-height: 200px;
+  overflow-y: auto;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.suggestionsList li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestionsList li:hover {
+  background-color: #f0f0f0;
+}
+.fixedbackground {
+  position: fixed;
+  top: 0vh; /* Starts after the header image */
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  background-image: linear-gradient(rgba(5, 10, 35, 0.7), rgba(5, 10, 35, 0.7)), url('./images/header.jpg');
+  filter: blur(1px); /* Adjust the blur level as needed */
+  z-index: -1;
+}
+.review{
+  z-index: -1;
+  background-color: #f0f0f0;
+}
+/* .header {
+  background-image: linear-gradient(rgba(5, 10, 35, 0.7), rgba(5, 10, 35, 0.7)), url('./images/header.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+} */

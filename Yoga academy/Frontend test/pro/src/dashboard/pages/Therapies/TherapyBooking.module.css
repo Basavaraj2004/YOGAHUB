@@ -1,0 +1,15 @@
+.parentContainer {
+    /* background-color: grey; */
+    /* background: rgb(87, 100, 222); */
+    /* background: linear-gradient(45deg, rgba(87, 100, 222, 1) 0%, rgba(85, 179, 213, 1) 100%); */
+    background-color: #cfd7fa;
+    min-height: 100vh; /* Ensures full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: start; /* Aligns the form near the top */
+    padding-top: 20px; /* Optional: add space above form */
+}
+.full{
+    /* background-color: #cfd7fa;   */
+    background-color: white;
+}

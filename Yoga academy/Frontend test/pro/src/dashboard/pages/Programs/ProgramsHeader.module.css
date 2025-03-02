@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 20px 50px;
+    background-color: #cfd7fa;
+    color: black;
+  }
+  
+  .logo h1 {
+    font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
+  }
+  

@@ -1,0 +1,117 @@
+#RegisterBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+}
+
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+#RegisterTitle {
+    font-family: 'Poppins', sans-serif;
+}
+
+.RegisterContainer {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 30px;
+    width: 50px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.7);
+    width: 400px;
+    z-index: 1;
+}
+
+.RegisterContainer hr {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.RegisterContainer h1 {
+    text-align: center;
+    color: #ffffff;
+}
+
+.RegisterContainer form {
+    display: flex;
+    flex-direction: column;
+}
+
+.RegisterContainer form div {
+    margin-bottom: 15px;
+}
+
+.RegisterContainer input {
+    width: 100%;
+    background-color: rgba(19, 19, 18, 0.3);
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+    color: #ffffff;
+    height: 50px;
+}
+
+.RegisterContainer input:hover {
+    transition: all 0.3s ease;
+}
+
+.RegisterContainer input::placeholder {
+    font-weight: 500;
+    color: white;
+    font-family: sans-serif;
+}
+
+.RegisterContainer button {
+    background-color: #4b2d06;
+    color: whitesmoke;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.RegisterContainer button:hover {
+    background-color: #f0c078;
+    border-radius: 20px;
+}
+
+.RegisterContainer p {
+    text-align: center;
+    font-size: 14px;
+}
+
+p.error {
+    color: red;
+    font-size: 12px;
+    margin-top: -10px;
+}
+.login {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.login a {
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.login a:hover {
+    color: rgb(196, 116, 65);
+    font-size: 20px;
+}

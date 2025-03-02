@@ -1,0 +1,51 @@
+h2{
+   margin-bottom: 40px;
+}
+.enrollmentsPage {
+    padding: 20px;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  .enrollmentTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+  }
+  
+  .enrollmentTable th,
+  .enrollmentTable td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .enrollmentTable th {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .enrollmentTable tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .enrollmentTable tbody tr:hover {
+    background-color: #ddd;
+  }
+  
+  .chartsContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 40px;
+  }
+  
+  .pieChart, .barChart {
+    width: 45%;
+  }
+  
+  .pieChart h3, .barChart h3 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
