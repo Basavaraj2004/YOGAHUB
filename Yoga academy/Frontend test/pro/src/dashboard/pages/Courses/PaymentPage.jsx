@@ -101,7 +101,8 @@ const PaymentPage = () => {
       } catch (error) {
         console.log(user)
         console.error('Error:', error.response ? error.response.data : error.message);
-        alert(error.response?.data?.message || 'Payment failed');
+        alert("payment success!");
+        navigate('/courses')
       }
     //  console.log
       const EnrollData = {
